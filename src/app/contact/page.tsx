@@ -1,7 +1,6 @@
 "use client";
 
 import { GithubIcon, Instagram, Telegram } from "@/components/Icons";
-import { Github, Mail, X } from "lucide-react";
 import Link from "next/link";
 
 
