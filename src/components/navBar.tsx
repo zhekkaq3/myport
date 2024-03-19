@@ -10,7 +10,7 @@ const navigation = [
 
 const socialLink = [
     { id: 1, titleIcon: "Github", href: "https://github.com/zhekkaq3", icon: <GithubIcon /> },
-    { id: 2, titleIcon: "Telegram", href: "/https://t.me/Zhekkaq3", icon: <Telegram /> },
+    { id: 2, titleIcon: "Telegram", href: "https://t.me/Zhekkaq3", icon: <Telegram /> },
     { id: 3, titleIcon: "Instagram", href: "https://www.instagram.com/zheniaivanchik/", icon: <Instagram /> },
 ]
 

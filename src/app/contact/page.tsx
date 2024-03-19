@@ -8,14 +8,14 @@ const socials = [
 	{
 		icon: <Telegram />,
 		id:1,
-		href: "/",
+		href: "https://t.me/Zhekkaq3",
 		label: "Telegram",
 		handle: "@Zhekkaq3",
 	},
 	{
 		icon: <Instagram />,
 		id:2,
-		href: "/",
+		href: "https://www.instagram.com/zheniaivanchik/",
 		label: "Instagram",
 		handle: "Instagram",
 	},
