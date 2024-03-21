@@ -33,10 +33,12 @@ export default function RootLayout({
         />
         <NavBar />     
         {/* <PageTransitionEffect> */}
+        <div className="p-24">
           {children}
+        </div> 
         {/* </PageTransitionEffect> */}
         <Footer />
-        <CircularTextComponent />
+        {/* <CircularTextComponent /> */}
 
       </body>
     </html>
