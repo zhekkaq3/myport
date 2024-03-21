@@ -30,14 +30,13 @@ const socials = [
 
 export default function Contact() {
 	return (
-			<div className="container flex items-center justify-center grow px-4 mx-auto">
-				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
+				<div className="flex flex-row items-center justify-center md:flex-col">
 					{socials.map((s) => (
 							<Link
 								key={s.id}
 								href={s.href}
 								target="_blank"
-								className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
+								className="relative p-16 flex flex-col items-center gap-8 duration-700 group md:p-12 md:gap-4"
 							>
 								<span
 									className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
@@ -57,7 +56,5 @@ export default function Contact() {
 							</Link>
 					))}
 				</div>
-			</div>
-
 	);
 }

@@ -26,19 +26,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={lato.className}>
-      <body className='flex flex-col bg-black bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 min-h-screen w-full'>
+      <body className='flex flex-col relative bg-black bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 min-h-screen w-full'>
         <Particles
           className="absolute inset-0 -z-10 animate-fade-in"
           quantity={100}
         />
         <NavBar />     
         {/* <PageTransitionEffect> */}
-        <div className="p-24">
+        <div className="grow flex flex-col items-center justify-center p-32 xl:p-24 lg:p-16 md:p-12 sm:p-8">
           {children}
         </div> 
         {/* </PageTransitionEffect> */}
         <Footer />
-        {/* <CircularTextComponent /> */}
+        <CircularTextComponent />
 
       </body>
     </html>

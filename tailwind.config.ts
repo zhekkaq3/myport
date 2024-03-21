@@ -1,14 +1,14 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      typography: {
+	content: [
+		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+	],
+	theme: {
+		extend: {
+			typography: {
 				DEFAULT: {
 					css: {
 						"code::before": {
@@ -26,11 +26,11 @@ const config: Config = {
 					},
 				},
 			},
-      backgroundImage: {
+			backgroundImage: {
 				"gradient-radial":
 					"radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))",
 			},
-      animation: {
+			animation: {
 				"fade-in": "fade-in 2s ease-in-out forwards",
 				title: "title 2s ease-out forwards",
 				"fade-left": "fade-left 2s ease-in-out forwards",
@@ -96,8 +96,28 @@ const config: Config = {
 					},
 				},
 			},
-    },
-  },
-  plugins: [],
+			
+		},
+		screens: {
+			"2xl": { max: "1535px" },
+			// => @media (max-width: 1535px) { ... }
+		
+			xl: { max: "1279px" },
+			// => @media (max-width: 1279px) { ... }
+		
+			lg: { max: "1023px" },
+			// => @media (max-width: 1023px) { ... }
+		
+			md: { max: "767px" },
+			// => @media (max-width: 767px) { ... }
+		
+			sm: { max: "639px" },
+			// => @media (max-width: 639px) { ... }
+		
+			xs: { max: "479px" },
+			// => @media (max-width: 479px) { ... }
+		},
+	},
+	plugins: [],
 };
 export default config;
